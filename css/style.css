@@ -1,0 +1,236 @@
+body {
+  margin: 0px;
+  font-family: sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+
+#wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#wrapper.no-title {
+  padding-top: 1em;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a[href^="http://"]:not([href*="proc.linux.cz"]):after,
+a[href^="https://"]:not([href*="proc.linux.cz"]):after {
+  content: "\2B67";
+  vertical-align: super;
+  font-size: 0.8em;
+}
+
+/** HEADER **/
+
+header {
+  background-color: #f3cc0b;
+}
+
+header {
+  border-bottom: 1px solid black;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 a::before {
+  content: '';
+  display: inline-block;
+  width: 2em;
+  height: 1em;
+  background-image: url('../img/layout/tux.svg');
+  background-size: cover;
+}
+
+header ul {
+  list-style-type: none;
+  font-size: 1.3em;
+}
+
+header li {
+  display: inline;
+}
+
+header a {
+  color: #ac0000;
+}
+
+header li:not(:last-child)::after {
+  display: inline;
+  content: '|';
+  padding-left: 0.25em;
+}
+
+/** MAIN content **/
+
+main {
+  color: #555;
+}
+
+h1,
+h2,
+h3 {
+  color: black;
+}
+
+h2 {
+  border-bottom: 1px solid black;
+}
+
+h2 img {
+  max-width: 1em;
+  max-height: 0.8em;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+table,
+th,
+tr {
+  border: 1px solid lightgrey;
+}
+
+th {
+  background-color: #f3cc0b;
+  font-size: 1.1em;
+}
+
+td {
+  padding: 0.3em;
+  vertical-align: top;
+}
+
+pre {
+  padding: 0.5em;
+  border: 1px solid grey;
+  background-color: lightgrey;
+}
+
+#intro {
+  display: flex;
+  list-style-type: none;
+  margin: 2.5em 0;
+}
+
+#intro li {
+  flex:1;
+  text-align: center;
+}
+
+#intro i {
+  position: relative;
+  font-size: 8em;
+}
+
+#intro img {
+  position: absolute;
+  top: 25%;
+  left: 39%;
+  width: 22%;
+}
+
+.icons-flex {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 1.5em 0;
+}
+
+.icons-flex li {
+  flex:1;
+  text-align: center;
+}
+
+.icons-flex .fas,
+.icons-flex .fab,
+.icons-flex img {
+  display: block;
+  font-size: 3em;
+  margin: 0.3em auto;
+}
+
+.icons-flex img {
+  height: 1em;
+}
+
+.icons-flex a {
+  color: inherit;
+}
+
+.icons-flex a:hover {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.fa-download {
+  color: green;
+}
+
+.download {
+  text-align: right;
+  list-style-type: none;
+  clear: both;
+}
+
+.download li {
+  display: inline;
+}
+
+.download li:not(:last-child)::after {
+  display: inline;
+  content: '|';
+  padding-left: 0.25em;
+}
+
+.t_sc { /*TODO*/
+  float: right;
+  margin: 0.5em;
+}
+
+.mp {
+  background-color: lightgrey;
+}
+
+.inline-nav {
+  list-style-type: none;
+  padding: 0.5em;
+  background-color: #f3cc0b;
+  border: 1px solid black;
+}
+
+.inline-nav > li:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.inline-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/** FOOTER **/
+
+footer {
+  margin-top: 2em;
+  padding: 1em 0;
+  border-top: 3px solid #f3cc0b;
+  text-align: center;
+  font-size: 0.8em;
+  color: #888;
+}
